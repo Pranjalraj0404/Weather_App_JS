@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- Top Search -->
+    <div class="top-search">
+      <div class="search-wrap">
+        <input id="city-input" class="search-input" type="text" placeholder="Search for a city..." />
+        <button id="get-weather-btn" class="search-btn" aria-label="Search">🔍</button>
+      </div>
+      <div class="search-help">
+        Try:
+        <button class="chip">Bengaluru</button>
+        <button class="chip">Mumbai</button>
+        <button class="chip">Delhi</button>
+        <button class="chip">Kolkata</button>
+      </div>
+    </div>
+
+    <!-- Weather Dashboard -->
+    <section id="weather-info" class="weather-dashboard hidden">
+      <!-- Left Panel -->
+      <div class="main-info">
+        <h2 id="city-name" class="city-title">—</h2>
+        <p class="app-date">—</p>
+        <img id="icon" class="weather-icon" src="" alt="Weather Icon" />
+        <div id="temperature" class="temp">--°</div>
+        <p id="description" class="desc">—</p>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="details-panel">
+        <h3 class="panel-title">Weather Details</h3>
+        <div class="weather-details">
+          <div class="detail-item">
+            <span class="detail-label">Feels Like</span>
+            <span id="feels-like" class="detail-value">—</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Humidity</span>
+            <span id="humidity" class="detail-value">—</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Wind</span>
+            <span id="wind-speed" class="detail-value">—</span>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- Error Message -->
+    <div id="error-message" class="error hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

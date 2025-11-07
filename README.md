@@ -24,9 +24,8 @@ A beautifully designed, responsive **Weather Dashboard** built using **HTML, CSS
 ---
 
 ## 🧠 Tech Stack
-- **Frontend:** HTML5, CSS3, Vanilla JavaScript  
+- **Frontend:** HTML5, CSS3,  JavaScript  
 - **API:** OpenWeatherMap API  
-- **Design:** Glassmorphism + Gradient Backgrounds
 
 ---
 
